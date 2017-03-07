@@ -44,7 +44,7 @@ class ChatApp extends React.Component {
     }
 
     componentDidMount() {
-        let socket = io('http://54.85.5.71');
+        let socket = io('http://54.85.5.71:3500');
         let messages = this.state.messages;
         socket.on('connect', function () {
             // alert("online");
